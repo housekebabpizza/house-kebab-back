@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/open-closeds",
+      "handler": "open-closed.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/open-closeds/count",
+      "handler": "open-closed.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/open-closeds/:id",
+      "handler": "open-closed.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/open-closeds",
+      "handler": "open-closed.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/open-closeds/:id",
+      "handler": "open-closed.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/open-closeds/:id",
+      "handler": "open-closed.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

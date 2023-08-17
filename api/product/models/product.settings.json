@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "category": {
+      "via": "products",
+      "model": "category"
+    },
+    "cost": {
+      "type": "decimal",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "additions": {
+      "via": "products",
+      "collection": "addition"
+    },
+    "sizes": {
+      "via": "products",
+      "collection": "size",
+      "dominant": true
+    },
+    "free_sauces": {
+      "collection": "free-sauces",
+      "via": "products",
+      "dominant": true
+    },
+    "meats": {
+      "collection": "meats",
+      "via": "products",
+      "dominant": true
+    },
+    "discount": {
+      "model": "discount",
+      "via": "products"
+    },
+    "isPauseSell": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}

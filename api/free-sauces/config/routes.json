@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/free-sauces",
+      "handler": "free-sauces.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/free-sauces/count",
+      "handler": "free-sauces.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/free-sauces/:id",
+      "handler": "free-sauces.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/free-sauces",
+      "handler": "free-sauces.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/free-sauces/:id",
+      "handler": "free-sauces.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/free-sauces/:id",
+      "handler": "free-sauces.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "free_sauces",
+  "info": {
+    "name": "Free-sauces"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "products": {
+      "via": "free_sauces",
+      "collection": "product"
+    }
+  }
+}

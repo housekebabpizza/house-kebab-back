@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_size_sizes",
+  "info": {
+    "name": "size",
+    "icon": "biking",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "cost": {
+      "type": "decimal",
+      "required": false
+    }
+  }
+}

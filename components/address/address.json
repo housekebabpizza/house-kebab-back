@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_address_addresses",
+  "info": {
+    "name": "address",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "home": {
+      "type": "string",
+      "required": true
+    },
+    "apartment": {
+      "type": "string",
+      "required": true
+    },
+    "entrance": {
+      "type": "string"
+    },
+    "orderMethod": {
+      "type": "string",
+      "required": true
+    },
+    "payMethod": {
+      "type": "string",
+      "required": true
+    },
+    "disstance": {
+      "type": "decimal"
+    }
+  }
+}

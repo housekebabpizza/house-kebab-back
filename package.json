@@ -1,0 +1,41 @@
+{
+  "name": "house-kebab-back",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "migrate:import": "knex migrate:latest"
+  },
+  "dependencies": {
+    "knex": "0.21.18",
+    "pg": "8.5.1",
+    "sharp": "^0.32.1",
+    "strapi": "3.6.8",
+    "strapi-admin": "3.6.8",
+    "strapi-connector-bookshelf": "3.6.8",
+    "strapi-connector-mongoose": "^3.6.11",
+    "strapi-plugin-content-manager": "3.6.8",
+    "strapi-plugin-content-type-builder": "3.6.8",
+    "strapi-plugin-email": "3.6.8",
+    "strapi-plugin-i18n": "3.6.8",
+    "strapi-plugin-upload": "3.6.8",
+    "strapi-plugin-users-permissions": "3.6.8",
+    "strapi-provider-upload-backblaze-b2": "^0.0.4",
+    "strapi-utils": "3.6.8"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "9618e905-0b93-44b2-a794-6793f69daa71"
+  },
+  "engines": {
+    "node": "16.18.1",
+    "npm": "8.19.2"
+  },
+  "license": "MIT"
+}

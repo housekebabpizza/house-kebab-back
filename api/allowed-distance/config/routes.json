@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/allowed-distances",
+      "handler": "allowed-distance.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/allowed-distances/count",
+      "handler": "allowed-distance.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/allowed-distances/:id",
+      "handler": "allowed-distance.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/allowed-distances",
+      "handler": "allowed-distance.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/allowed-distances/:id",
+      "handler": "allowed-distance.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/allowed-distances/:id",
+      "handler": "allowed-distance.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

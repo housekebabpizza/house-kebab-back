@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_order_orders",
+  "info": {
+    "name": "order",
+    "icon": "cart-plus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "sauce": {
+      "type": "string",
+      "required": false
+    },
+    "count": {
+      "type": "integer",
+      "required": true
+    },
+    "additions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "additions.additions"
+    },
+    "cost": {
+      "type": "decimal",
+      "required": true
+    },
+    "category": {
+      "type": "component",
+      "repeatable": false,
+      "component": "category.category"
+    },
+    "note": {
+      "type": "text"
+    },
+    "size": {
+      "type": "component",
+      "repeatable": false,
+      "component": "size.size"
+    },
+    "meat": {
+      "type": "string"
+    }
+  }
+}

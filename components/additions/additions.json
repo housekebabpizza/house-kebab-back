@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_additions_additions",
+  "info": {
+    "name": "additions",
+    "icon": "file-signature",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cost": {
+      "type": "decimal",
+      "required": true
+    },
+    "isChoosed": {
+      "type": "boolean",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

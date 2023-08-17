@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "allowed_distances",
+  "info": {
+    "name": "Allowed distance"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "text"
+    },
+    "allowedDistance": {
+      "type": "integer",
+      "required": false,
+      "default": 4
+    }
+  }
+}

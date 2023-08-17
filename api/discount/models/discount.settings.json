@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discounts",
+  "info": {
+    "name": "Discount"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "discountCost": {
+      "type": "integer"
+    },
+    "products": {
+      "via": "discount",
+      "collection": "product"
+    }
+  }
+}

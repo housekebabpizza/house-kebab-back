@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "numberOrder": {
+      "type": "string",
+      "required": true
+    },
+    "totalCost": {
+      "type": "decimal",
+      "required": true
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "address.address"
+    },
+    "order": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order.order"
+    },
+    "clientPhone": {
+      "type": "string",
+      "required": true
+    },
+    "minutes": {
+      "type": "string",
+      "default": "20",
+      "required": false
+    },
+    "isDelivered": {
+      "type": "boolean",
+      "default": false
+    },
+    "disstance": {
+      "type": "decimal"
+    },
+    "payDelivery": {
+      "type": "decimal",
+      "default": 0
+    },
+    "statusOrder": {
+      "type": "string",
+      "default": "Nie potwierdzony"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "open_closeds",
+  "info": {
+    "name": "Open closed",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isOpen": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "open": {
+      "type": "time",
+      "required": true
+    },
+    "close": {
+      "type": "time",
+      "required": true
+    }
+  }
+}

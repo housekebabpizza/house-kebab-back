@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meats",
+  "info": {
+    "name": "Meats"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "meat": {
+      "type": "string"
+    },
+    "products": {
+      "via": "meats",
+      "collection": "product"
+    }
+  }
+}
